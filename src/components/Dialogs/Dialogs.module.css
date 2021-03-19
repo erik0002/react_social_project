@@ -1,0 +1,49 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 20px;
+  font-size: 150%;
+  font-family: Noto Sans JP, sans-serif;
+  color: rgb(226, 13, 13);
+  text-decoration-style: wavy;
+  text-shadow: 3px 2px 2px rgb(255, 255, 255);
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/* .dialog:hover {
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(-10px)
+        translateX(20px)
+        rotate(15deg)
+        scale(1.4);
+    }
+} */
+
+
+
+.dialogsItems .active {
+    color: gold;
+    text-decoration: underline;
+}
+
+.dialog {
+}
+
+.messages {
+  padding: 20px;
+}
+
+.message {
+}

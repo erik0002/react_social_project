@@ -1,0 +1,10 @@
+.news {
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+}
