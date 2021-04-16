@@ -1,9 +1,40 @@
-.item {
-  color: greenyellow;
+h3 {
+  color:rgb(88, 40, 5);
+  padding: 10px;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.item {
+  color: rgb(255, 47, 75);
+  background: white;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.8) ;
+}
+.item:hover{
+    border: 10px rgb(70, 2, 2) ridge;
+    background: grey;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
 
+}
 .item img {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+  margin: 10px;
+}
+.item img:hover {
+  opacity: 0.5;
+}
+
+.likes {
+  padding-left: 25px;
+  color: paleturquoise;
+}
+.likes:hover{
+  font-size: larger;
+  color:lightsalmon;
 }

@@ -1,20 +1,22 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  padding: 20px;
 }
 
-.dialogsItems {
-  padding: 20px;
-  font-size: 150%;
+.dialogsItems a {
+  font-size: 20px;
   font-family: Noto Sans JP, sans-serif;
   color: rgb(226, 13, 13);
   text-decoration-style: wavy;
   text-shadow: 3px 2px 2px rgb(255, 255, 255);
-  font-weight: bolder;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   line-height: 2;
+  text-decoration: none;
 }
+
 
 /* .dialog:hover {
     animation: bounce 1s;
@@ -46,4 +48,9 @@
 }
 
 .message {
+  background: white;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 10px;
+  border: 4px darkred ridge;
 }

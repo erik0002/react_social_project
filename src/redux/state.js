@@ -39,7 +39,7 @@ let store = {
                 {id: 9, message: "Where are your parents?"}
             ], 
             newMessageBody: ""
-        }, 
+        },  
         sidebar: {}
     },
     _callSubscriber() {}, 

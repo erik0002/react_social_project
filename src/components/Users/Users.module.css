@@ -1,0 +1,18 @@
+.userPhoto{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border:blue 2px solid;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.userPhoto:hover{
+    opacity: 0.8;
+}
+button{
+    background: blue;
+    font-weight: 800;
+}
+.selectedPage{
+    font-weight: bold;
+}

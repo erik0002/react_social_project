@@ -7,7 +7,7 @@ return (
         <div className={s.item}> 
             <img src="https://itc.ua/wp-content/uploads/2021/02/screen_shot_2020_07_21_at_9.38.25_am.0.png"/>
             {props.message}
-            <div>
+            <div className={s.likes}>
                 <span>likes</span> {props.likeCounts}
             </div>
         </div>

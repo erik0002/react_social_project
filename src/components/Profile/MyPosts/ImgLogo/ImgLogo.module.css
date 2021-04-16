@@ -1,0 +1,12 @@
+
+.ImgLogo {
+  width: 250px;
+  border: 3px #000000 solid;
+  border-radius: 30%;
+  margin: 20px;
+}
+.ImgLogo:hover {
+  transition: .5s;
+  border: 10px #000000 solid;
+}
+
