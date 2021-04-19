@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import Profile from "./components/Profile/Profile";
+//import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -13,16 +13,17 @@ import UsersContainer from "./components/Users/UsersContainer";
 //import Users from "./components/Users/Users";
 //import Forma from "./components/forma/Forma";
 import FormaContainer from "./components/forma/FormaContainer";
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
 const App = (props) => {
   return (
     <BrowserRouter>
-      <diV className="app-wrapper">
+      <div className="app-wrapper">
         <Header />
         <Nav />
         <div class="app-wrapper-content">
           <Route path="/dialogs" render={ () => <DialogsContainer store={props.store} />} />
-          <Route path="/profile" render={ () => <Profile store={props.store}/>} />
+          <Route path="/profile/:userId?" render={ () => <ProfileContainer store={props.store}/>} />
           <Route path="/users" render={ () => <UsersContainer store={props.store}/>} />
           <Route path="/forma" render={ () => <FormaContainer store={props.store}/>} />
           <Route path="/news" component={News} />
@@ -30,7 +31,7 @@ const App = (props) => {
           <Route path="/settings" component={Settings} />
         </div>
       
-      </diV>
+      </div>
     </BrowserRouter>
   );
 };

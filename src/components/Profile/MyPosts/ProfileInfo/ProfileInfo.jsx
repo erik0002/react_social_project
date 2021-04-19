@@ -2,8 +2,12 @@ import React from "react";
 import MainPageProfile from "../../../MainPageProfile/MainPageProfile";
 import ImgLogo from "../ImgLogo/ImgLogo";
 import s from "./ProfileInfo.module.css";
+import Preloader from "../../../Common/Preloader/Preloader";
 
 const ProfileInfo = (props) => {
+  if (!props.profile) {
+     return <Preloader/>
+  }
   return (
     <div>
       <MainPageProfile name="https://realnoevremya.ru/uploads/articles/e4/9d/a76285004df6e9d5.jpg"/>
@@ -15,6 +19,15 @@ const ProfileInfo = (props) => {
       <div className={s.descriptionBlock}>
       Мани́жа, полное имя Мани́жа Дале́ровна Санги́н (урожд. Хамра́ева; род. 8 июля 1991 года, Душанбе, Таджикская ССР, СССР) — российская певица таджикского происхождения, независимый музыкант, автор и исполнитель песен, режиссёр музыкальных видеоклипов, общественный деятель в области борьбы с домашним насилием, амбассадор благотворительного фонда «Подари жизнь» (с декабря 2019 года), первый российский посол доброй воли Агентства ООН по делам беженцев (с декабря 2020 года).
 По итогам национального зрительского SMS-голосования, проведённого 8 марта 2021 года в прямом эфире Первого канала, будет представлять Россию с песней «Русская женщина» (Russian Woman) на 65-м международном конкурсе песни «Евровидение-2021», который пройдёт в городе Роттердам (Нидерланды) в мае 2021 года.
+      </div>
+      <div>
+          <img src={props.profile.photos.large}/>
+          <p>
+                <br/>{props.profile.fullName} 
+                <br/>{props.profile.aboutMe}
+                <br/><a href="https://www.facebook.com">{props.profile.contacts.facebook}</a>
+                <br/><a href="https://github.com">{props.profile.contacts.github}</a>
+          </p>
       </div>
     </div>
   );
