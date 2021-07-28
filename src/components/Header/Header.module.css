@@ -7,3 +7,21 @@
 .header img {
 width: 150px;
 }
+
+.loginBlock {
+  float: right;
+}
+.loginBlock img {
+  width: 40px;
+  padding: 5px;
+}
+.loginBlock a {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+/* .loginBlock a:hover, img:hover{
+  opacity: 0.7;
+} */

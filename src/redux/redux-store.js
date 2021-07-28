@@ -4,6 +4,7 @@ import dialogsReducer from "./dialogs-reducer";
 import sidebarReducer from "./Sidebar-reducer";
 import formaReducer from "./forma-reducer";
 import usersReducer from "./users-reducer";
+import authReducer from "./auth-reducer";
 
 
 let reducers = combineReducers({ 
@@ -11,11 +12,12 @@ let reducers = combineReducers({
     messagesPage: dialogsReducer,
     formaDataPage: formaReducer, 
     sidebar: sidebarReducer, 
-    usersPage: usersReducer
+    usersPage: usersReducer, 
+    auth: authReducer
 });
 
 let store = createStore(reducers);
 
 window.store = store; 
 
-export default store;
+export default store; 
